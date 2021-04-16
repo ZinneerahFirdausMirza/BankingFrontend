@@ -1,30 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADFC Transaction Details</title>
-    <!-- <link rel="stylesheet" href="styles\style3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script> -->
-  </head>
+<html>
+
   <body>
 
-    <input type="checkbox" id="check">
-    <!--header area start-->
-    <header>
-
-      <div class="left_area">
-        <h3>  RSVZ <span>Bank</span></h3>
-      </div>
-      <div class="right_area">
-        <a (click)="logout()" [routerLink]="['/home']" class="logout_btn">Logout</a>
-      </div>
-
-    </header>
-    <!--header area end-->
-  
-    <!--mobile navigation bar start-->
     
     <div class="content">
         <div class="login-box">
@@ -60,14 +38,13 @@
                   </table>
                 </div>
               </form>
-              </section>
-              
-              
-              
+              </section>        
           </div>
         </div>
+     
+        <td class="lefttd">
       <div class="content">
-        <div class="login-box">
+        <div class="login-box1">
           <h2 style="font-family: Bradley Hand ITC; font-size: 200%;">Customer Details</h2>
           <section>
             
@@ -228,18 +205,7 @@
 
             </div>
           </div>
-      
-        
-      
-      <!-- <tr *ngFor="let customers of customerRequests">
-        <td>{{customers.service_ref_no}}</td>
-        <td>{{customers.first_name}}</td>
-        <td>{{customers.acct_type}}</td>
-        <td>
-            <button [routerLink]="['/update/', product.id]">Update</button>
-            <button type="button" (click)="delete(product.id)">Remove</button>
-        </td>
-    </tr> -->
 
+      
   </body>
 </html>

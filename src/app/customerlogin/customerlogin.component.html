@@ -1,50 +1,26 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <title>ADFC Bank</title>
   </head>
   <body>
-    
     <div class="container">
-      
-      <div class="row">
-       
-          <div class="col-md-6">
-              <div class="card">
-                 <!-- <img src="../assets/bg3.jpg" alt="Notebook" style="width:100%; height: 100%; position: absolute; z-index: 100;">  -->
-                  <form class="box" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
-                        <h5>Login</h5>
-                      <p class="text-muted"> Please enter your login and password! </p>
-                            <!-- <img src="../assets/customer-avatar.png" alt="Avatar" class="avatar"> -->
-                            <input type="text"  id="customer_id" name="customer_id" placeholder="Customer id" #customer_id="ngModel"   [(ngModel)]="contact.customer_id">
-                            <input type="password" id="login_pass" name="login_pass" placeholder="Customer Password" #login_pass="ngModel"   [(ngModel)]="contact.login_pass"> 
+    <form class="box" #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+      <h5>Login</h5>
+      <p> Please enter your login and password! </p>
+          <!-- <img src="../assets/customer-avatar.png" alt="Avatar" class="avatar"> -->
+          <input type="text"  id="customer_id" name="customer_id" placeholder="Customer id" #customer_id="ngModel"   [(ngModel)]="contact.customer_id">
+          <input type="password" id="login_pass" name="login_pass" placeholder="Customer Password" #login_pass="ngModel"   [(ngModel)]="contact.login_pass"> 
 
 
-                            <input type="submit"  value="Login" >
-                            <input type="submit" [routerLink]="['/forgotpassword']" value="Forgot Password?" >
-                            <input type="submit" [routerLink]="['/forgotuserid']" value="Forgot User Id?" >
-                            <input class="al" type="submit" [routerLink]="['/login']" value="Admin Login" >
-                      
-                      
-                     
+          <input type="submit"  value="Login" >
+          <input type="submit" [routerLink]="['/forgotpassword']" value="Forgot Password?" >
+          <input type="submit" [routerLink]="['/forgotuserid']" value="Forgot User Id?" >
+         
+    
+    
+   
 
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>
-  
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-  </body>
+</form>
+</div>
+</body>
 </html>
-<router-outlet></router-outlet>
